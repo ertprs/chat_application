@@ -9,9 +9,11 @@
     "query-strings": "0.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-pro-sidebar": "^0.4.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "socket.io-client": "^2.3.1"
+    "socket.io-client": "^2.3.1",
+    "styled-icons": "^10.22.0"
   },
   "scripts": {
     "start": "react-scripts start",
