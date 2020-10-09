@@ -1,0 +1,38 @@
+.input__message {
+  width: 100%;
+  padding: 1rem;
+  width: 100%;
+
+  .input__bg {
+    background: $secondary-color;
+    border-radius: 7px;
+    padding: 5px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .input__message__bar {
+      width: 95%;
+      color: #fff;
+      background: transparent;
+      border: none;
+      padding: 6px 0;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    .send__button {
+      margin: 10px 0;
+      height: 30px;
+      width: 30px;
+      border-radius: 100%;
+      color: $secondary-color;
+      border: none;
+      cursor: pointer;
+      background: $primary-color;
+    }
+  }
+
+}

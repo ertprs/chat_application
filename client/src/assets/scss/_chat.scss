@@ -1,0 +1,80 @@
+main {
+  background: $primary-color;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+
+  .container {
+    width: 80%;
+    margin: auto;
+
+    header {
+      padding: 0.5rem 0;
+    }
+  }
+
+  .messages {
+    height: 70vh;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    overflow-y: scroll;
+
+    .message {
+      margin: 1rem 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &.left {
+        justify-content: flex-start;
+
+        .message__content {            
+          img {
+            margin-right: 10px;
+          }
+  
+          .text {
+            background: $secondary-color;
+            padding: 1rem;
+            border-radius: 7px;
+            border-bottom-left-radius: 0px;
+          }
+        }
+
+      }
+
+      &.right {
+        justify-content: flex-end;
+
+        .message__content {
+          flex-direction: row-reverse;
+
+          img {
+            margin-left: 10px;
+          }
+
+          .text {
+            background: $blue-color;
+            padding: 1rem;
+            border-radius: 7px;
+            border-bottom-right-radius: 0px;
+          }
+        }
+        
+      }
+      
+      
+    
+    }
+  }
+
+  @import 'input';
+
+}
