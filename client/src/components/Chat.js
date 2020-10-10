@@ -10,7 +10,7 @@ import Sidebar from "./Sidebar";
 let socket;
 
 export default function Chat({ location }) {
-	const ENDPOINT = "localhost:8080";
+	const ENDPOINT = "localhost:5000";
 	const [name, setName] = useState("");
 	const [room, setRoom] = useState("");
 	const [message, setMessage] = useState("");
@@ -57,15 +57,15 @@ export default function Chat({ location }) {
 		<div className="wrapper">
 			<Sidebar />
 			<main className="chat">
-				<div className="container">
-					<Header />
-					<Messages user={name} messages={messages} />
-					<Input
-						message={message}
-						setMessage={setMessage}
-						sendMessage={sendMessage}
-					/>
-				</div>
+				{/* <div className="container"> */}
+				<Header />
+				<Messages user={name} messages={messages} />
+				<Input
+					message={message}
+					setMessage={setMessage}
+					sendMessage={sendMessage}
+				/>
+				{/* </div> */}
 			</main>
 		</div>
 	);

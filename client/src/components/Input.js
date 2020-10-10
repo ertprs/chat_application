@@ -1,18 +1,6 @@
 import React from "react";
 
 export default function Input({ message, setMessage, sendMessage }) {
-	const handleMessage = (e) => {
-		e.preventDefault();
-
-		if (e.which !== 13) {
-			console.log("not enter key");
-			setMessage(e.target.value);
-		} else {
-			console.log("enter key");
-			sendMessage();
-		}
-	};
-
 	return (
 		<div className="input__message">
 			<div className="input__bg">
